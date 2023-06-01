@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <h2>Colocar imagens para se reajustarem automaticamente aos dispositivos que estão acessando o site</h2>
+    <h3>Tag do corpo para as imagems<br>Tag Picture</h3>
+
+    <h3>Tag para imagem maior , colocada dentro da Tag PICTURE <br>Tag IMG</h3>
+     
+
+    <h3>Tag para as imagens menores, sendo colocadas em ordem, do maior para o menor <br>Tag Source Media Type (max-width)</h3>
+    
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Imagem1.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/Imagem2.png" type="image/png">
+        <img src="Imagens/Imagem3.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="Mídia/happy-mistake.mp3" controls autoplay></audio>
+    <!-- MP3 WAVE OGG -->
+
+    <h1>Reprozudindo áudios 2</h1>
+    <p>Outra forma de reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls>
+        <source src="Mídia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="Mídia/guanacast-33.ogg" type="audio/ogg">
+        <source src="Mídia/guanacast-33.wave" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="Mídia/guanacast-33.mp3">Clique aqui para Baixar o arquivo MP3.</a>
+    </audio>
+
+    <h1>Reproduzindo áudios na Revisão</h1>
+    <h2>Reprodução</h2>
+    <audio preload="metadata" autoplay controls>
+        <source src="Mídia/Hush Little Baby - The Green Orbs.mp3" type="audio/mpeg">
+        <source src="Mídia/Hush Little Baby - The Green Orbs.ogg" type="audio/ogg">
+        <source src="Mídia/Hush Little Baby - The Green Orbs.wafe" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="Mídia/Hush Little Baby - The Green Orbs.mp3">Baixe aqui o arquivo em MP3.</a>
+    </audio>
+</body>
+</html>
